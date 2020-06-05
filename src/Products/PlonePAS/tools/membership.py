@@ -742,9 +742,6 @@ class MembershipTool(BaseTool):
             login_time = member.getProperty('login_time', default)
             if login_time == default:
                 res = True
-                login_time = DateTime()
-            member.setProperties(login_time=self.ZopeTime(),
-                                 last_login_time=login_time)
         return res
 
     @security.protected(ManagePortal)
