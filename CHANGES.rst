@@ -8,6 +8,17 @@ Changelog
 
 .. towncrier release notes start
 
+8.0.4.post0 (2024-12-12)
+------------------------
+
+Breaking changes:
+
+
+- Do not set `last_login` nor `login_time` on each user login.
+  Should avoid having conflicts.
+  [gforcada] (#1)
+
+
 8.0.4 (2024-06-26)
 ------------------
 
